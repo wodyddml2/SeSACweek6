@@ -16,6 +16,12 @@
 		63CAA8CC28A09017005D90E4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 63CAA8CB28A09017005D90E4 /* Alamofire */; };
 		63CAA8CF28A09022005D90E4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 63CAA8CE28A09022005D90E4 /* Kingfisher */; };
 		63CAA8D228A0902F005D90E4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 63CAA8D128A0902F005D90E4 /* SwiftyJSON */; };
+		63CAA8D628A090CB005D90E4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 63CAA8D528A090CB005D90E4 /* .gitignore */; };
+		63CAA8D828A09105005D90E4 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CAA8D728A09105005D90E4 /* APIKey.swift */; };
+		63CAA8DB28A0949A005D90E4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CAA8DA28A09499005D90E4 /* Endpoint.swift */; };
+		63CAA8DD28A09513005D90E4 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CAA8DC28A09513005D90E4 /* URL+Extension.swift */; };
+		63CAA8DF28A0A78D005D90E4 /* KakaoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CAA8DE28A0A78D005D90E4 /* KakaoAPIManager.swift */; };
+		63CAA8E128A0ABE9005D90E4 /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CAA8E028A0ABE9005D90E4 /* ClosureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		63CAA8BF28A09000005D90E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63CAA8C228A09000005D90E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63CAA8C428A09000005D90E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63CAA8D528A090CB005D90E4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		63CAA8D728A09105005D90E4 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		63CAA8DA28A09499005D90E4 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		63CAA8DC28A09513005D90E4 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		63CAA8DE28A0A78D005D90E4 /* KakaoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAPIManager.swift; sourceTree = "<group>"; };
+		63CAA8E028A0ABE9005D90E4 /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +58,7 @@
 		63CAA8AA28A08FFE005D90E4 = {
 			isa = PBXGroup;
 			children = (
+				63CAA8D528A090CB005D90E4 /* .gitignore */,
 				63CAA8B528A08FFE005D90E4 /* SeSACweek6 */,
 				63CAA8B428A08FFE005D90E4 /* Products */,
 			);
@@ -62,15 +75,28 @@
 		63CAA8B528A08FFE005D90E4 /* SeSACweek6 */ = {
 			isa = PBXGroup;
 			children = (
+				63CAA8D928A09487005D90E4 /* Network */,
+				63CAA8D728A09105005D90E4 /* APIKey.swift */,
 				63CAA8B628A08FFE005D90E4 /* AppDelegate.swift */,
 				63CAA8B828A08FFE005D90E4 /* SceneDelegate.swift */,
 				63CAA8BA28A08FFE005D90E4 /* ViewController.swift */,
 				63CAA8BC28A08FFE005D90E4 /* Main.storyboard */,
+				63CAA8E028A0ABE9005D90E4 /* ClosureViewController.swift */,
 				63CAA8BF28A09000005D90E4 /* Assets.xcassets */,
 				63CAA8C128A09000005D90E4 /* LaunchScreen.storyboard */,
 				63CAA8C428A09000005D90E4 /* Info.plist */,
 			);
 			path = SeSACweek6;
+			sourceTree = "<group>";
+		};
+		63CAA8D928A09487005D90E4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				63CAA8DA28A09499005D90E4 /* Endpoint.swift */,
+				63CAA8DC28A09513005D90E4 /* URL+Extension.swift */,
+				63CAA8DE28A0A78D005D90E4 /* KakaoAPIManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63CAA8D628A090CB005D90E4 /* .gitignore in Resources */,
 				63CAA8C328A09000005D90E4 /* LaunchScreen.storyboard in Resources */,
 				63CAA8C028A09000005D90E4 /* Assets.xcassets in Resources */,
 				63CAA8BE28A08FFE005D90E4 /* Main.storyboard in Resources */,
@@ -156,7 +183,12 @@
 			files = (
 				63CAA8BB28A08FFE005D90E4 /* ViewController.swift in Sources */,
 				63CAA8B728A08FFE005D90E4 /* AppDelegate.swift in Sources */,
+				63CAA8E128A0ABE9005D90E4 /* ClosureViewController.swift in Sources */,
+				63CAA8D828A09105005D90E4 /* APIKey.swift in Sources */,
 				63CAA8B928A08FFE005D90E4 /* SceneDelegate.swift in Sources */,
+				63CAA8DF28A0A78D005D90E4 /* KakaoAPIManager.swift in Sources */,
+				63CAA8DB28A0949A005D90E4 /* Endpoint.swift in Sources */,
+				63CAA8DD28A09513005D90E4 /* URL+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
