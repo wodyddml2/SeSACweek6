@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="SeSACweek6" customModuleProvider="target">
+            <connections>
+                <outlet property="contentLabel" destination="WMd-hP-uG5" id="dAj-Op-5VB"/>
+                <outlet property="likeButton" destination="O3C-VO-KgV" id="AXc-ps-A4A"/>
+                <outlet property="posterImageView" destination="w05-ey-Akg" id="BLC-eg-jhc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="198"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w05-ey-Akg">
+                    <rect key="frame" x="8" y="8" width="165" height="182"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3C-VO-KgV">
+                    <rect key="frame" x="125" y="8" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="25R-bt-QvC"/>
+                        <constraint firstAttribute="height" constant="48" id="BKl-JW-Mai"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                    </buttonConfiguration>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMd-hP-uG5">
+                    <rect key="frame" x="69.5" y="88.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="WMd-hP-uG5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hgl-a3-knT"/>
+                <constraint firstItem="O3C-VO-KgV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="MHk-07-3eg"/>
+                <constraint firstAttribute="trailing" secondItem="O3C-VO-KgV" secondAttribute="trailing" constant="8" id="SrY-cK-j8P"/>
+                <constraint firstAttribute="trailing" secondItem="w05-ey-Akg" secondAttribute="trailing" constant="8" id="XFF-i4-xtn"/>
+                <constraint firstItem="w05-ey-Akg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="cBC-YL-6c4"/>
+                <constraint firstAttribute="bottom" secondItem="w05-ey-Akg" secondAttribute="bottom" constant="8" id="cBc-gh-oJi"/>
+                <constraint firstItem="WMd-hP-uG5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qRH-jd-7fU"/>
+                <constraint firstItem="w05-ey-Akg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="qar-FF-pd7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139.85507246376812" y="-85.044642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
